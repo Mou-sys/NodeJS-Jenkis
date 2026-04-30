@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3001;
+const PORT = 3000;
 
 const server = http.createServer((req, res) => {
   // Serve index.html for root path
@@ -34,4 +34,5 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Open your browser and go to http://localhost:${PORT}`);
 });
